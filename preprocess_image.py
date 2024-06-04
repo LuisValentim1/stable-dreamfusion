@@ -62,7 +62,7 @@ class DPT():
         self.task = task
         self.device = device
 
-        from dpt.models import DPTDepthModel
+        from dpt import DPTDepthModel
 
         if task == 'depth':
             path = 'pretrained/omnidata/omnidata_dpt_depth_v2.ckpt'
