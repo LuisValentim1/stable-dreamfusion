@@ -105,7 +105,7 @@ def clean_mesh(verts, faces, v_pct=1, min_f=8, min_d=5, repair=True, remesh=True
     
     if remesh:
         # ms.apply_coord_taubin_smoothing()
-        ms.meshing_isotropic_explicit_remeshing(iterations=3, targetlen=pml.AbsoluteValue(remesh_size))
+        ms.meshing_isotropic_explicit_remeshing(iterations=3, targetlen=pml.PureValue(remesh_size))
 
     # extract mesh
     m = ms.current_mesh()
